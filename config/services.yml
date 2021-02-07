@@ -1,0 +1,12 @@
+imports:
+    - { resource: alias.yml }
+
+services:
+    _defaults:
+        autowire: true
+        public: true
+
+    david63.lockatend.listener:
+        class: david63\lockatend\event\listener
+        tags:
+            - { name: event.listener }

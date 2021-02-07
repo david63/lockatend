@@ -1,0 +1,11 @@
+{% if S_USER_ENABLE %}
+	<hr>
+
+	<dl>
+		<dt><label for="user_lock_at_end">{{ lang('LOCK_AT_END') }}{{ lang('COLON') }}</label></dt>
+		<dd>
+			<label for="user_lock_at_end1"><input type="radio" name="lock_at_end" id="user_lock_at_end1" value="1"{% if S_LOCK_AT_END %} checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+			<label for="user_lock_at_end0"><input type="radio" name="lock_at_end" id="user_lock_at_end0" value="0"{% if not S_LOCK_AT_END %} checked="checked"{% endif %} /> {{ lang('NO') }}</label>
+		</dd>
+	</dl>
+{% endif %}
